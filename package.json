@@ -1,8 +1,8 @@
 {
   "name": "first-boilerplate-test",
   "version": "1.0.0",
-  "description": "Simplistic base for react projects. Up to date and ready to use.",
-  "repository": "https://github.com/Tora1024/Simplistic-React-Boilerplate",
+  "description": "A simple app to try the different possibilities that Jest provides on testing.",
+  "repository": "https://github.com/Tora1024/JestTesting",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
