@@ -6,11 +6,11 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import Header from './components/Header/Header';
+import Header from './components/Commons/Header/Header';
 
-import Home from './containers/Home/Home';
-import About from './containers/About/About';
-import NotFound from './containers/NotFound/NotFound';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import NotFound from './components/NotFound/NotFound';
 
 const Routes = ({ history }) => {
   return (
