@@ -1,15 +1,11 @@
-/* cssnext syntax */
-:root {
-  --color-black: rgb(0,0,0);
-  --color-blue: #32c7ff;
-}
+@import "../../../styles/constants.css";
 
 .container {
+	margin: 0 20px;
+	height: 100%;
+	font-size: 72px;
 	display: flex;
-	flex-direction: column;
-	color: var(--color-blue);
-
-	& .greeting {
-		color: var(--color-black);
-	}
+	justify-content: center;
+	align-items: center;
+	color: var(--brandColor-lightBlue);
 }

@@ -1,0 +1,32 @@
+@import "../../../../styles/constants.css";
+
+.header {
+	display: flex;
+	background-color: var(--brandColor-mateBlack);
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.title {
+	color: var(--brandColor-white);
+	font-family: var(--brandFont-arvo);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	font-family: arial;
+}
+
+.nav-item {
+	color: var(--brandColor-lightGray);
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.nav-item:hover 
+{
+	color: var(--brandColor-lightBlue);
+	text-decoration: none;
+	cursor: pointer;
+}
