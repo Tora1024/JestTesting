@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDOR_LIBS = [
 	'react', 'react-dom', 'react-redux', 
@@ -10,7 +10,7 @@ const VENDOR_LIBS = [
 
 module.exports = {
   entry: {
-    bundle: './src/index.js',
+    bundle: ['babel-polyfill', './src/index.js'],
     vendor: VENDOR_LIBS
   },
   output: {
