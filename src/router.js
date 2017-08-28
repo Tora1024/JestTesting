@@ -7,7 +7,7 @@ import {
 import PropTypes from 'prop-types';
 
 import Layout from './components/Common/Layout/Layout';
-import Home from './components/Home/Home';
+import Home from './containers/Home/Home';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 
