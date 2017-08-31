@@ -11,14 +11,16 @@ import Home from './containers/Home/Home';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import New from './containers/NewPost/NewPost';
+import Show from './containers/ShowPost/ShowPost';
 
 const Routes = ({ history }) => {
   return (
     <Router history={history} >
       <Switch>
         <Layout exact path='/' component={Home} />
-        <Layout path='/new' component={New} />
         <Layout path='/about' component={About} />
+        <Layout path='/new' component={New} />
+        <Layout path='/:id' component={Show} />
         <Route component={NotFound} />
       </Switch>
     </Router>
