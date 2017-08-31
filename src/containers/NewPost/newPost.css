@@ -1,0 +1,69 @@
+@import "../../../styles/constants.css";
+
+.container {
+	margin: 0 10%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: var(--brandFont-arial);
+	border-bottom: 1px solid var(--brandColor-lightGray);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.post_field {
+	display: flex;
+  flex-direction: column;
+  font-family: var(--brandFont-arial);
+  margin-bottom: 20px;
+}
+
+.buttons {
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.submit {
+  padding: 0;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  text-decoration: none;
+  color: var(--brandColor-white);
+  background-color: var(--brandColor-submit);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: var(--brandFont-arial);
+  cursor: pointer;
+}
+
+.cancel {
+	text-decoration: none;
+  color: var(--brandColor-white);
+  background-color: var(--brandColor-cancel);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: var(--brandFont-arial);
+}
+
+.error_msg {
+	margin-top: 5px;
+	color: var(--brandColor-error);
+}
+
+.error_field {
+	border-color: var(--brandColor-error);
+	border-style: solid;
+	border-width: 1px;
+}
