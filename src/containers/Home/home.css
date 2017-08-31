@@ -9,11 +9,10 @@
 
 .headline {
 	height: 20px;
-	font-size: 16px;
+	font-size: 22px;
 	margin-top: 20px;
+	padding-bottom: 10px; 
 	font-family: var(--brandFont-arial);
-	color: var(--brandColor-lightGray);
-	font-weight: normal;
 	border-bottom: 1px solid var(--brandColor-lightGray);
 }
 
@@ -25,6 +24,7 @@
 }
 
 .nav-item {
+	cursor: pointer;
   text-decoration: none;
   color: var(--brandColor-white);
   background-color: var(--brandColor-lightBlue);
@@ -37,4 +37,17 @@
 .recent_posts {
 	height: 80%;
 	overflow: scroll;
+}
+
+.nav-post {
+	cursor: pointer;
+	text-decoration: none;
+  color: var(--brandColor-white);
+  background-color: var(--brandColor-submit);
+  font-family: var(--brandFont-arial);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  top: -100px;
+  left: 80%;
 }

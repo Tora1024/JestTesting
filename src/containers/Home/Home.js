@@ -20,11 +20,14 @@ class Home extends Component {
   }
 
   mapPosts(posts) {
-    return posts.map((post, index) => (
-      <div key={index}>
-        <Post post={post}/>
-      </div>
-    ));
+    return _.map(posts, (post, index) => {
+      return (
+        <div key={index}>
+          <Post post={post}/>
+          <Link styleName='nav-post' to={`/${post.id}`}>Go to this Post</Link>
+        </div>
+      );
+    });
   }
 
   render() {
