@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import CSSModules from 'react-css-modules';
 import _ from 'lodash';
 import styles from './home.css';
 import fetchPosts from '../../actions/fetchPosts';
-import Post from '../../components/Post/Post';
+import Post from '../../components/SinglePost/Post';
 
 class Home extends Component {
   componentDidMount() {
@@ -29,8 +30,13 @@ class Home extends Component {
   render() {
     return (
       <div styleName='container'>
+        <div styleName='add_new'>
+          <Link styleName='nav-item' to='/new'>Add New Post</Link>
+        </div>
         <h2 styleName='headline'>Recent Posts:</h2>
-        {this.renderPosts()}
+        <section styleName='recent_posts'>
+          {this.renderPosts()}
+        </section>
       </div>
 		);
   }
