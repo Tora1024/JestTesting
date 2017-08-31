@@ -8,10 +8,33 @@
 }
 
 .headline {
+	height: 20px;
 	font-size: 16px;
-	margin-top: 40px;
+	margin-top: 20px;
 	font-family: var(--brandFont-arial);
 	color: var(--brandColor-lightGray);
 	font-weight: normal;
 	border-bottom: 1px solid var(--brandColor-lightGray);
+}
+
+.add_new {
+	height: 40px%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--brandColor-white);
+  background-color: var(--brandColor-lightBlue);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: var(--brandFont-arial);
+  font-weight: bold;
+}
+
+.recent_posts {
+	height: 80%;
+	overflow: scroll;
 }
