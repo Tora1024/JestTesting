@@ -10,6 +10,9 @@
   --brandColor-facebook: #0072b1;
   --brandColor-linkedIn: #0976B4;
   --brandColor-skype: #34b7f1;
+  --brandColor-error: #cc0000;
+  --brandColor-cancel: #cc0000;
+  --brandColor-submit: #4CAF50;
   /* Fonts */
   --brandFont-arvo: 'Arvo', Serif;
   --brandFont-arial: Arial, Sans-Serif;
