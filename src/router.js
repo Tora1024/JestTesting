@@ -10,12 +10,14 @@ import Layout from './components/Common/Layout/Layout';
 import Home from './containers/Home/Home';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
+import New from './containers/NewPost/NewPost';
 
 const Routes = ({ history }) => {
   return (
     <Router history={history} >
       <Switch>
         <Layout exact path='/' component={Home} />
+        <Layout path='/new' component={New} />
         <Layout path='/about' component={About} />
         <Route component={NotFound} />
       </Switch>
