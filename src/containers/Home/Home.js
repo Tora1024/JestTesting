@@ -23,8 +23,7 @@ class Home extends Component {
     return _.map(posts, (post, index) => {
       return (
         <div key={index}>
-          <Post post={post}/>
-          <Link styleName='nav-post' to={`/${post.id}`}>Go to this Post</Link>
+          <Post post={post} options='simple'/>
         </div>
       );
     });

@@ -38,16 +38,3 @@
 	height: 80%;
 	overflow: scroll;
 }
-
-.nav-post {
-	cursor: pointer;
-	text-decoration: none;
-  color: var(--brandColor-white);
-  background-color: var(--brandColor-submit);
-  font-family: var(--brandFont-arial);
-  padding: 10px;
-  border-radius: 10px;
-  position: relative;
-  top: -100px;
-  left: 80%;
-}
