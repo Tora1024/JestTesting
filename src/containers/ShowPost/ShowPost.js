@@ -24,7 +24,7 @@ class ShowPosts extends Component {
   renderPost() {
     const { post } = this.props;
     return _.isEmpty(post) ? ''
-    : <Post post={post}/>;
+    : <Post post={post} options='detailed'/>;
   }
 
   onDeleteClick() {
