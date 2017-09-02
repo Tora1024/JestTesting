@@ -2,19 +2,23 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CSSModules from 'react-css-modules';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 import { Link } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form';
 import createPosts from '../../actions/createPosts';
 import styles from './newPost.css';
+import FIELDS from '../../constants/FIELDS';
 
 class NewPost extends Component {
 	constructor(props) {
 		super(props);
 
 		this.onSubmit = this.onSubmit.bind(this);
+		this.renderField = this.renderField.bind(this);
 	}
 	
 	renderField (field) {
+
 		const { meta : { error, touched } } = field;
 		const fieldStyle = (touched && error) ? styles.error_field : '';
 
@@ -73,22 +77,17 @@ NewPost.propTypes = {
 	handleSubmit: PropTypes.func,
 	createPosts: PropTypes.func,
 	history: PropTypes.object,
+	field: PropTypes.object,
 }
 
 const validate = (values) => {
 	const errors = {};
 
-	if (!values.title) {
-		errors.title = 'Enter a title';
-	}
-
-	if (!values.categories) {
-		errors.categories = 'Enter a category';
-	}
-
-	if (!values.content) {
-		errors.content = 'Enter some content';
-	}
+	_.each(FIELDS, (field, name) => {	
+		if (!values[name]) {
+			errors[name] = field.error_msg
+		}
+	});
 
 	return errors;
 };
