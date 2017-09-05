@@ -11,4 +11,5 @@ export default {
   delete_posts_Request: 'DELETE_POSTS_REQUEST',
   delete_posts_Success: 'DELETE_POSTS_SUCCESS',
   delete_posts_Failure: 'DELETE_POSTS_FAILURE',
+  select_posts: 'SELECT_POSTS',
 };
