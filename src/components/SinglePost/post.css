@@ -22,6 +22,12 @@
 	font-family: var(--brandFont-arvo);
 }
 
+.title-single {
+	margin: 0;
+	font-size: 20px;
+	font-family: var(--brandFont-arvo);
+}
+
 .categories {
 	font-size: 18px;
 	font-weight: bold;
@@ -41,4 +47,13 @@
   font-family: var(--brandFont-arial);
   padding: 10px;
   border-radius: 10px;
+}
+
+.left-side {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox {
+	margin-right: 10px;
 }
