@@ -10,14 +10,14 @@
 .headline {
 	height: 20px;
 	font-size: 22px;
-	margin-top: 20px;
+	margin: 0;
 	padding-bottom: 10px; 
 	font-family: var(--brandFont-arial);
 	border-bottom: 1px solid var(--brandColor-lightGray);
 }
 
 .add_new {
-	height: 40px%;
+	height: 80px;
   display: flex;
   margin-top: 20px;
   justify-content: flex-end;
@@ -34,7 +34,82 @@
   font-weight: bold;
 }
 
-.recent_posts {
+.recent_posts, .selected_posts {
 	height: 80%;
-	overflow: scroll;
+	display: inline-block;
+  vertical-align: top;
+}
+
+.overlay {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  min-width: 100px;
+  max-height: 200px;
+  line-height: 20px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.shadowContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 1;
+}
+ 
+.linearShadowTop {
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0.3) 10%, rgba(255, 255, 255, 0)) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  width: inherit;
+  height: 4px;
+}
+
+.linearShadowBottom {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3) 90%) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  width: inherit;
+  height: 4px;
+}
+
+.shadowCoverTop {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)) 100% 0;
+  background-size: 100% 12px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.shadowCoverBottom {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%;
+  background-size: 100% 12px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+
 }
