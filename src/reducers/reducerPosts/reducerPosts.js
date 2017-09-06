@@ -6,13 +6,6 @@ const reducerPosts = (state = {}, action) => {
 		case actionTypes.fetch_posts_Success:
 			return _.mapKeys(action.payload.data, 'id');
 		case actionTypes.fetchSinglePost_Success:
-			//ES5 way of doing it
-			/*{
-				const post = action.payload.data;
-				const newState = { ...state };
-				newState[post.id] = post;
-				return newState;
-			}*/
 			return {...state, [action.payload.data.id]: action.payload.data };
 		case actionTypes.delete_posts_Success:
 			return _.omit(state, action.payload);
