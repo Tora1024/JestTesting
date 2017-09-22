@@ -10,7 +10,7 @@ class Post extends Component {
 		super(props);
 
 		const { id } = this.props.post;
-		const { selected } = this.props.checked;
+		const { selected } = this.props;
 
 		const selectedState = selected === undefined 
 		? 
