@@ -58,8 +58,10 @@ ShowPosts.propTypes = {
 	history: PropTypes.object,
 }
 
-function mapStateToProps({ posts }, ownProps) {
-	return { post: posts[ownProps.match.params.id] };
-}
+const mapStateToProps = ({ posts }, ownProps) => {
+  return {
+    post: posts[ownProps.match.params.id],
+  };
+};
 
 export default connect(mapStateToProps, { fetchSinglePost, deleteSinglePost })(CSSModules(ShowPosts, styles));
