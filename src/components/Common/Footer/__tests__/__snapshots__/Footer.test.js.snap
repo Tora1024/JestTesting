@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Footer/Footer.js in general should render correct snapshot 1`] = `
+<footer
+  className="footer"
+>
+  <nav
+    className="nav"
+  >
+    <Link
+      className="nav-item"
+      replace={true}
+      to="/"
+    >
+      Home
+    </Link>
+    <Link
+      className="nav-item"
+      replace={true}
+      to="/about"
+    >
+      About
+    </Link>
+  </nav>
+  <section
+    className="social"
+  >
+    <div
+      className="facebook"
+    />
+    <div
+      className="linkedin"
+    />
+    <div
+      className="skype"
+    />
+    <div
+      className="github"
+    />
+  </section>
+  <section
+    className="copyright"
+  >
+    Created by @Héctor
+  </section>
+</footer>
+`;
