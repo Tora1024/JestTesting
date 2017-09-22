@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Layout/Layout.js in general should render correct snapshot 1`] = `
+<Route
+  render={[Function]}
+/>
+`;
