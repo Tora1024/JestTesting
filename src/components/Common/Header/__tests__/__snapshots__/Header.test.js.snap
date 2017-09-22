@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Header/Header.js in general should render correct snapshot 1`] = `
+<header
+  className="header"
+>
+  <h1
+    className="title"
+  >
+    A blog in a pond
+  </h1>
+  <nav
+    className="nav"
+  >
+    <Link
+      className="nav-item"
+      replace={true}
+      to="/"
+    >
+      Home
+    </Link>
+    <Link
+      className="nav-item"
+      replace={true}
+      to="/about"
+    >
+      About
+    </Link>
+  </nav>
+</header>
+`;
