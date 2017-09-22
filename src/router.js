@@ -14,8 +14,10 @@ import New from './containers/NewPost/NewPost';
 import Show from './containers/ShowPost/ShowPost';
 
 const Routes = ({ history }) => {
+  //<Router history={history}> It seems that when I pass the history prop, this
+  //Router somehow ignores it, and when I am not passing it, it works just fine
   return (
-    <Router history={history} >
+    <Router>
       <Switch>
         <Layout exact path='/' component={Home} />
         <Layout path='/about' component={About} />
