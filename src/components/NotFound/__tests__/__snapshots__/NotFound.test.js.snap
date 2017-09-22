@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/NotFound/NotFound.js in general should render correct snapshot 1`] = `
+<main
+  className="container"
+>
+  <section
+    className="inner-container"
+  >
+    <div
+      className="lost"
+    />
+    <h1
+      className="headline"
+    >
+      Uhh ohh! Not sure what happened, but you are out of reach right now..
+    </h1>
+    <Link
+      className="go-back"
+      replace={false}
+      to="/"
+    >
+      Please, take me back home!
+    </Link>
+  </section>
+</main>
+`;
