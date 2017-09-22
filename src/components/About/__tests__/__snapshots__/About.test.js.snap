@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/About/About.js in general should render correct snapshot 1`] = `
+<div
+  className="container"
+>
+  About
+</div>
+`;
